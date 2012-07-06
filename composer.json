@@ -1,0 +1,29 @@
+{
+  "name": "lavoiesl/phpthumb-bundle"
+  ,"type": "symfony-bundle"
+  ,"description": "Symfony PHPThumb Bundle"
+  ,"keywords": ["phpthumb", "symfony"]
+  ,"homepage": "https://github.com/lavoiesl/PHPThumbBundle"
+  ,"license": ["MIT"]
+  ,"authors": [
+    {
+      "name": "Sebastien Lavoie"
+      ,"email": "github@lavoie.sl"
+      ,"homepage": "http://sebastien.lavoie.sl"
+    }
+  ]
+  ,"repositories": [
+    {
+      "type": "vcs"
+      ,"url": "https://github.com/lavoiesl/PHPThumb.git"
+    }
+  ]
+  ,"require": {
+    "php": ">=5.3.2"
+    ,"symfony/framework-bundle": "2.*"
+    ,"masterexploder/PHPThumb": "2.0.x-dev"
+  }
+  ,"autoload": {
+    "psr-0": { "LavoieSl\\PhpThumbBundle": "" }
+  }
+}
