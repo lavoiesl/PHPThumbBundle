@@ -1,0 +1,36 @@
+{%- stylesheets
+  'bundles/lavoieslphpthumb/css/demo.css'
+  filter="phpthumb"
+%}
+
+<link rel="stylesheet" href="{{ asset_url }}" media="screen">
+{%- endstylesheets %}
+
+
+{% block content %}
+
+<h1>PHPThumb demo</h1>
+
+{% for demo,options in demos %}
+  <h2>
+    {{ demo }}
+  </h2>
+  <ul>
+    {% for option,value in options %}
+    <li>
+      {{ option }}={{ value }}
+    </li>
+    {% endfor %}
+  </ul>
+  <a href="{{ path('phpthumb_image', options) }}">
+    <img src="{{ path('phpthumb_image', options) }}" alt="">
+  </a>
+
+{% endfor %}
+
+  <h2>
+    Background image cropped
+  </h2>
+  <div class="phpthumb-cropped"></div>
+
+{% endblock %}

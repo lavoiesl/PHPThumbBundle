@@ -1,0 +1,6 @@
+.phpthumb-cropped {
+  display: inline-block;
+  height: 200px;
+  width: 300px;
+  background-image: -php-thumb(bundles/phpthumb/images/test.jpg, crop=100|100|300|200);
+}

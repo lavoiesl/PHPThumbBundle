@@ -1,0 +1,9 @@
+parameters:
+  phpthumb.assetic.filter.phpthumb.class: LavoieSl\PhpThumbBundle\Assetic\Filter\PhpThumbFilter
+
+services:
+  phpthumb_filter:
+    class: %phpthumb.assetic.filter.phpthumb.class%
+    arguments: [ @router ]
+    tags:
+      - { name: assetic.filter, alias: phpthumb }
