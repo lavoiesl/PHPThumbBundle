@@ -26,4 +26,5 @@
   ,"autoload": {
     "psr-0": { "LavoieSl\\PhpThumbBundle": "" }
   }
+  ,"target-dir": "LavoieSl/PhpThumbBundle"
 }
